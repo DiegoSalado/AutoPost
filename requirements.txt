@@ -1,0 +1,17 @@
+dagster==1.8.0
+dagster-webserver==1.8.0
+dagster-cloud==1.8.0
+dagster-postgres==0.24.0
+pendulum==2.1.2
+bs4==0.0.2
+instagrapi==2.1.2
+langchain==0.2.12
+langchain-community==0.2.11
+langchain-core==0.2.29
+langchain-ollama==0.1.1
+langchain-text-splitters==0.2.2}
+ollama==0.3.1
+pillow==10.4.0
+pydantic==2.8.2
+pydantic_core==2.20.1
+requests==2.32.3
