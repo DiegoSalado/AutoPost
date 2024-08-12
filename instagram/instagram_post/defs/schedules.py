@@ -4,5 +4,5 @@ from dagster import ScheduleDefinition
 
 post_schedule = ScheduleDefinition(
     job=post_job,
-    cron_schedule = "0 19 * * *"
+    cron_schedule = "0 1 * * *"
 )
