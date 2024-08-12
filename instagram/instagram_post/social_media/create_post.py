@@ -36,7 +36,8 @@ def create_content(context: AssetExecutionContext, get_article:dict):
             llm_response = generate_instagram_slides(article['title'], article['html'])
             context.log.info(llm_response)
             break
-        except:
+        except Exception as e:
+            context.log.info(e)
             pass
         
     article['slides'] = llm_response
