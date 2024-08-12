@@ -30,8 +30,15 @@ def get_article(context: AssetExecutionContext):
 def create_content(context: AssetExecutionContext, get_article:dict):
 
     article = get_article
-    llm_response = generate_instagram_slides(article['title'], article['html'])
-    context.log.info(llm_response)
+
+    while True:
+        try:
+            llm_response = generate_instagram_slides(article['title'], article['html'])
+            context.log.info(llm_response)
+            break
+        except:
+            pass
+        
     article['slides'] = llm_response
 
     context.log.info(article)
